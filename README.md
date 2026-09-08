@@ -1,40 +1,71 @@
-### `shubhan@github ~ $ whoami`
+<div align="center">
 
-Backend &amp; distributed-systems engineer at **Entrupy**, Bangalore.
+<img src="assets/shubhan.png" width="240" alt="Shubhan Mehrotra" />
 
-I work on event-driven services, billing and payments infrastructure, and
-systems software — most recently a self-healing distributed cache written in Go
-from scratch, and an LLM inference-observability pipeline. Currently building
-FastAPI microservices behind a customer-facing analytics dashboard and an
-event-driven payment-recovery engine on AWS Lambda + SQS.
+<h1>Shubhan Mehrotra</h1>
 
-<br>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=B0B8C4&center=true&vCenter=true&width=640&height=38&lines=Backend+%26+Distributed+Systems+Engineer;Event-driven+services+%C2%B7+payments+%26+billing+infra;Distributed+cache+in+Go+%C2%B7+LLM+observability+pipelines;Python+%C2%B7+Go+%C2%B7+AWS" alt="" />
 
-### `shubhan@github ~ $ ls ~/work`
+<p>
+<a href="https://shubhanmehrotra.com"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://linkedin.com/in/shubhanmehrotra"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:shubhanmehrotra@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="./resume/shubhan-mehrotra-resume.pdf"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-0D1117?style=flat-square&logo=readdotcv&logoColor=white" alt="Resume" /></a>
+</p>
 
-| | | |
+</div>
+
+<!-- optional hero GIF — record a project (ScreenToGif), drop it in assets/, then:
+<div align="center"><img src="assets/hero.gif" width="820" alt="" /></div>
+-->
+
+---
+
+## About
+
+Backend &amp; distributed-systems engineer at **Entrupy**, Bangalore. I work on
+event-driven services, billing and payments infrastructure, and systems software
+— most recently a self-healing distributed cache written in Go from scratch, and
+an LLM inference-observability pipeline. Right now I'm building FastAPI
+microservices behind a customer-facing analytics dashboard and an event-driven
+payment-recovery engine on AWS Lambda + SQS.
+
+## Projects
+
+| Project | | |
 |---|---|---|
 | **[phoneix](https://github.com/onyxmytrojin/phoneix)** | Distributed cache in Go — consistent hashing, gossip-based failure detection, zero-downtime rebalancing — plus a personal API and dashboard, all running on a Pixel 7a. | [demo](https://shubhanmehrotra.com/cluster) |
 | **[ollive-inference-logger](https://github.com/onyxmytrojin/ollive-inference-logger)** | LLM inference observability. A decorator auto-instruments any provider call; logs flow HTTP → Kafka → ClickHouse, decoupled from the request path. | [demo](https://ollive-inference-logger-black.vercel.app) |
 | **[pixel-server](https://github.com/onyxmytrojin/pixel-server)** | A Pixel 7a as a 24/7 headless Debian server — GrapheneOS, proot, Cloudflare Tunnel, Docker Compose under a 6 GB RAM budget. | — |
 | **[securelife-crm](https://github.com/onyxmytrojin/securelife-crm)** | AI insurance CRM — conversational lead qualification, PDF policy extraction, LLM coverage-gap analysis, Kanban pipeline. | [demo](https://securelife-crm.vercel.app) |
 
-<br>
+## Stack
 
-### `shubhan@github ~ $ cat skills.txt`
+**Languages**
+&nbsp;![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-0D1117?style=flat-square&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-0D1117?style=flat-square&logo=postgresql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=white)
 
-```text
-Languages   Python · Go · TypeScript · SQL · Java · C/C++
-Backend     FastAPI · Django/DRF · REST APIs · microservices
-Data        PostgreSQL · DynamoDB · ClickHouse · Kafka · Redis
-Infra       AWS (Lambda · SQS · EventBridge · S3 · ECS) · Docker · Kubernetes
-```
+**Backend**
+&nbsp;![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django%2FDRF-0D1117?style=flat-square&logo=django&logoColor=white)
+![REST](https://img.shields.io/badge/REST%20APIs-0D1117?style=flat-square&logo=openapiinitiative&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-0D1117?style=flat-square&logo=apachekafka&logoColor=white)
 
-<br>
+**Data**
+&nbsp;![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-0D1117?style=flat-square&logo=amazondynamodb&logoColor=white)
+![ClickHouse](https://img.shields.io/badge/ClickHouse-0D1117?style=flat-square&logo=clickhouse&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-0D1117?style=flat-square&logo=apachekafka&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=white)
 
-### `shubhan@github ~ $ ./links.sh`
-
-[Portfolio](https://shubhanmehrotra.com) &nbsp;·&nbsp;
-[LinkedIn](https://linkedin.com/in/shubhanmehrotra) &nbsp;·&nbsp;
-[Résumé](./resume/shubhan-mehrotra-resume.pdf) &nbsp;·&nbsp;
-shubhanmehrotra@gmail.com
+**Infra**
+&nbsp;![AWS Lambda](https://img.shields.io/badge/Lambda-0D1117?style=flat-square&logo=awslambda&logoColor=white)
+![SQS](https://img.shields.io/badge/SQS-0D1117?style=flat-square&logo=amazonsqs&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-0D1117?style=flat-square&logo=amazonec2&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0D1117?style=flat-square&logo=githubactions&logoColor=white)
