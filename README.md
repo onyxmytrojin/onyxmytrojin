@@ -53,19 +53,16 @@ payment-recovery engine on AWS Lambda + SQS.
 &nbsp;![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=05B8A3)
 ![Django](https://img.shields.io/badge/Django%2FDRF-0D1117?style=flat-square&logo=django&logoColor=44B78B)
 ![REST](https://img.shields.io/badge/REST%20APIs-0D1117?style=flat-square&logo=openapiinitiative&logoColor=6BA539)
-![Microservices](https://img.shields.io/badge/Microservices-0D1117?style=flat-square&logo=apachekafka&logoColor=9AA4B2)
 
 **Data**
 &nbsp;![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=5B9BD5)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-0D1117?style=flat-square&logo=amazondynamodb&logoColor=6D7BE8)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-0D1117?style=flat-square)
 ![ClickHouse](https://img.shields.io/badge/ClickHouse-0D1117?style=flat-square&logo=clickhouse&logoColor=FFCC01)
 ![Kafka](https://img.shields.io/badge/Kafka-0D1117?style=flat-square&logo=apachekafka&logoColor=9AA4B2)
 ![Redis](https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=FF4438)
 
 **Infra**
-&nbsp;![AWS Lambda](https://img.shields.io/badge/Lambda-0D1117?style=flat-square&logo=awslambda&logoColor=FF9900)
-![SQS](https://img.shields.io/badge/SQS-0D1117?style=flat-square&logo=amazonsqs&logoColor=FF4F8B)
-![EC2](https://img.shields.io/badge/EC2-0D1117?style=flat-square&logo=amazonec2&logoColor=FF9900)
+&nbsp;![AWS](https://img.shields.io/badge/AWS%20%C2%B7%20Lambda%20%C2%B7%20SQS%20%C2%B7%20EventBridge%20%C2%B7%20S3%20%C2%B7%20ECS-0D1117?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=2496ED)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=5B8DEF)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0D1117?style=flat-square&logo=githubactions&logoColor=2088FF)
