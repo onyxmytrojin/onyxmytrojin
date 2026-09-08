@@ -42,30 +42,30 @@ payment-recovery engine on AWS Lambda + SQS.
 ## Stack
 
 **Languages**
-&nbsp;![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-0D1117?style=flat-square&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-0D1117?style=flat-square&logo=postgresql&logoColor=white)
-![Java](https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=white)
+&nbsp;![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=FFD43B)
+![Go](https://img.shields.io/badge/Go-0D1117?style=flat-square&logo=go&logoColor=00ADD8)
+![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=5B9BD5)
+![SQL](https://img.shields.io/badge/SQL-0D1117?style=flat-square&logo=postgresql&logoColor=5B9BD5)
+![Java](https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=FF9E2C)
+![C++](https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=6598D0)
 
 **Backend**
-&nbsp;![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=white)
-![Django](https://img.shields.io/badge/Django%2FDRF-0D1117?style=flat-square&logo=django&logoColor=white)
-![REST](https://img.shields.io/badge/REST%20APIs-0D1117?style=flat-square&logo=openapiinitiative&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-0D1117?style=flat-square&logo=apachekafka&logoColor=white)
+&nbsp;![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=05B8A3)
+![Django](https://img.shields.io/badge/Django%2FDRF-0D1117?style=flat-square&logo=django&logoColor=44B78B)
+![REST](https://img.shields.io/badge/REST%20APIs-0D1117?style=flat-square&logo=openapiinitiative&logoColor=6BA539)
+![Microservices](https://img.shields.io/badge/Microservices-0D1117?style=flat-square&logo=apachekafka&logoColor=9AA4B2)
 
 **Data**
-&nbsp;![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=white)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-0D1117?style=flat-square&logo=amazondynamodb&logoColor=white)
-![ClickHouse](https://img.shields.io/badge/ClickHouse-0D1117?style=flat-square&logo=clickhouse&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-0D1117?style=flat-square&logo=apachekafka&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=white)
+&nbsp;![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=5B9BD5)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-0D1117?style=flat-square&logo=amazondynamodb&logoColor=6D7BE8)
+![ClickHouse](https://img.shields.io/badge/ClickHouse-0D1117?style=flat-square&logo=clickhouse&logoColor=FFCC01)
+![Kafka](https://img.shields.io/badge/Kafka-0D1117?style=flat-square&logo=apachekafka&logoColor=9AA4B2)
+![Redis](https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=FF4438)
 
 **Infra**
-&nbsp;![AWS Lambda](https://img.shields.io/badge/Lambda-0D1117?style=flat-square&logo=awslambda&logoColor=white)
-![SQS](https://img.shields.io/badge/SQS-0D1117?style=flat-square&logo=amazonsqs&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-0D1117?style=flat-square&logo=amazonec2&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0D1117?style=flat-square&logo=githubactions&logoColor=white)
+&nbsp;![AWS Lambda](https://img.shields.io/badge/Lambda-0D1117?style=flat-square&logo=awslambda&logoColor=FF9900)
+![SQS](https://img.shields.io/badge/SQS-0D1117?style=flat-square&logo=amazonsqs&logoColor=FF4F8B)
+![EC2](https://img.shields.io/badge/EC2-0D1117?style=flat-square&logo=amazonec2&logoColor=FF9900)
+![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=2496ED)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=5B8DEF)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0D1117?style=flat-square&logo=githubactions&logoColor=2088FF)
