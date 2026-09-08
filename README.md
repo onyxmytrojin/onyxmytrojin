@@ -83,9 +83,6 @@
 
 <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=onyxmytrojin&theme=tokyonight" alt="profile summary" />
 
-<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=onyxmytrojin&theme=tokyonight" alt="most used languages" />
-<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=onyxmytrojin&theme=tokyonight" alt="most committed language" />
-
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=onyxmytrojin&theme=tokyonight" alt="stats" />
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=onyxmytrojin&theme=tokyonight&utcOffset=5.5" alt="productive time" />
 
