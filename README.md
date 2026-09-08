@@ -81,11 +81,14 @@
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=onyxmytrojin&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=tokyonight&icon_color=7aa2f7&title_color=7aa2f7" alt="stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=onyxmytrojin&layout=compact&hide_border=true&langs_count=8&hide=html,jupyter%20notebook,css&theme=tokyonight&title_color=7aa2f7" alt="top languages" />
+<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=onyxmytrojin&theme=tokyonight" alt="profile summary" />
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=onyxmytrojin&bg_color=1a1b27&color=7aa2f7&line=7aa2f7&point=bb9af7&area=true&hide_border=true" alt="activity graph" />
+<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=onyxmytrojin&theme=tokyonight" alt="most used languages" />
+<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=onyxmytrojin&theme=tokyonight" alt="most committed language" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=onyxmytrojin&hide_border=true&theme=tokyonight&ring=7aa2f7&fire=bb9af7&currStreakLabel=7aa2f7" alt="streak" />
+<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=onyxmytrojin&theme=tokyonight" alt="stats" />
+<img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=onyxmytrojin&theme=tokyonight&utcOffset=5.5" alt="productive time" />
+
+<img width="98%" src="https://streak-stats.demolab.com/?user=onyxmytrojin&hide_border=true&theme=tokyonight&ring=7AA2F7&fire=BB9AF7&currStreakLabel=7AA2F7&sideLabels=7AA2F7&dates=828BB8" alt="streak" />
 
 </div>
