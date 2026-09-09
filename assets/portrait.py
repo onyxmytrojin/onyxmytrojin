@@ -85,14 +85,18 @@ pim.save(PREVIEW)
 # ---- animated svg ----
 Wsvg, Hsvg = COLS * CHAR_W, rows * CHAR_H
 per = TYPE_SECONDS / rows
+# base opacity="1" so the portrait still shows if the host does not run SMIL;
+# where SMIL works, <set> hides each line and <animate> reveals it in sequence
 tspans = "".join(
-    f'<text x="0" y="{(i + 0.85) * CHAR_H:.1f}" opacity="0">{html.escape(ln) or " "}'
-    f'<animate attributeName="opacity" from="0" to="1" begin="{i * per:.3f}s" dur="0.01s" fill="freeze"/></text>'
+    f'<text x="0" y="{(i + 0.85) * CHAR_H:.1f}" opacity="1">{html.escape(ln) or " "}'
+    f'<set attributeName="opacity" to="0"/>'
+    f'<animate attributeName="opacity" to="1" begin="{i * per:.3f}s" dur="0.01s" fill="freeze"/></text>'
     for i, ln in enumerate(lines)
 )
 cur_y = ";".join(f"{(i + 0.85) * CHAR_H - CHAR_H * 0.8:.1f}" for i in range(rows))
 cursor = (
-    f'<rect width="{CHAR_W:.1f}" height="{CHAR_H * 0.9:.1f}" fill="{FG}" x="2">'
+    f'<rect width="{CHAR_W:.1f}" height="{CHAR_H * 0.9:.1f}" fill="{FG}" x="2" opacity="0">'
+    f'<set attributeName="opacity" to="1"/>'
     f'<animate attributeName="y" values="{cur_y}" dur="{TYPE_SECONDS:.2f}s" calcMode="discrete" fill="freeze"/>'
     f'<animate attributeName="opacity" values="1;1;0;1;0;1;0" keyTimes="0;0.6;0.67;0.77;0.84;0.93;1" '
     f'dur="{TYPE_SECONDS + 1.1:.2f}s" fill="freeze"/></rect>'
