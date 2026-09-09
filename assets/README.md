@@ -2,8 +2,8 @@
 
 | file | what |
 |---|---|
-| `hero.gif` | Masthead banner — animated dark grayscale gradient with the name. Seamless 36-frame loop, ~0.75 MB. |
-| `hero.py` | Regenerates `hero.gif`. `pip install pillow numpy` then `python assets/hero.py`. Tweak `NAME`, size, palette, motion constants at the top. |
+| `banner.svg` | Masthead — dark gradient + turbulence texture, a drifting glow and a diagonal light sweep (SMIL), name in light tracked type. ~3 KB, hand-editable. Renders reliably on GitHub (an animated GIF here rendered intermittently via GitHub's image player). |
+| `hero.py` | Alternative: generates an animated **GIF** banner (procedural spectral-noise flow). `pip install pillow numpy` then `python assets/hero.py`. Kept in case you want the GIF look; not referenced by the README. |
 | `shubhan.png` | Profile photo — circular crop of the GitHub avatar. |
 | `portrait.py` | Turns a photo into an animated monochrome ASCII-portrait SVG that types itself in. Needs a **good source**: save it as `assets/_src.jpeg` first. |
 
