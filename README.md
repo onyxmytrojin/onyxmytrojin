@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/hero.gif" width="840" alt="Shubhan Mehrotra" />
+<img src="assets/hero.gif?v=2" width="840" alt="Shubhan Mehrotra" />
 
 <br>
 
-<img src="assets/shubhan.png" width="185" alt="" />
+<img src="assets/shubhan.png?v=2" width="185" alt="" />
 
 <p><em>Backend &amp; distributed-systems engineer&nbsp;·&nbsp; event-driven services&nbsp;·&nbsp; Python · Go · AWS</em></p>
 
