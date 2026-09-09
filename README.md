@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/shubhan.png" width="240" alt="Shubhan Mehrotra" />
+<img src="assets/hero.gif" width="820" alt="Shubhan Mehrotra" />
 
-<h1>Shubhan Mehrotra</h1>
+<img src="assets/shubhan.png" width="200" alt="" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=B0B8C4&center=true&vCenter=true&width=640&height=38&lines=Backend+%26+Distributed+Systems+Engineer;Event-driven+services+%C2%B7+payments+%26+billing+infra;Distributed+cache+in+Go+%C2%B7+LLM+observability+pipelines;Python+%C2%B7+Go+%C2%B7+AWS" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1000&color=A7AEBB&center=true&vCenter=true&width=640&height=36&lines=Backend+%26+Distributed+Systems+Engineer;Event-driven+services+%C2%B7+payments+%26+billing+infra;Distributed+cache+in+Go+%C2%B7+LLM+observability+pipelines;Python+%C2%B7+Go+%C2%B7+AWS" alt="" />
 
 <p>
 <a href="https://shubhanmehrotra.com"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
@@ -14,10 +14,6 @@
 </p>
 
 </div>
-
-<!-- optional hero GIF — record a project (ScreenToGif), drop it in assets/, then:
-<div align="center"><img src="assets/hero.gif" width="820" alt="" /></div>
--->
 
 ---
 

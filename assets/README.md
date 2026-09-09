@@ -1,13 +1,14 @@
 # assets
 
-- `shubhan.png` — profile image used in the README.
+| file | what |
+|---|---|
+| `hero.gif` | Masthead banner — animated dark grayscale gradient with the name. Seamless 36-frame loop, ~0.75 MB. |
+| `hero.py` | Regenerates `hero.gif`. `pip install pillow numpy` then `python assets/hero.py`. Tweak `NAME`, size, palette, motion constants at the top. |
+| `shubhan.png` | Profile photo (dark-graded, rounded). |
 
-## Adding project GIFs
+## Adding a project GIF
 
-1. Record the app with **ScreenToGif** (Windows) — keep it 6–12 s, crop tight, ~800px wide.
-2. Save it here, e.g. `phoneix.gif`.
-3. Reference it in `README.md`. For a hero GIF, uncomment the block under the header.
-   For a per-project GIF, add a row image in the Projects table:
+1. Record the app with **ScreenToGif** (Windows) — 6–12 s, cropped tight, ~700 px wide.
+2. Save it here, e.g. `phoneix.gif`, keep it under ~5 MB.
+3. Reference it under a project row in `README.md`:
    `<br><img src="assets/phoneix.gif" width="640" alt="">`
-
-Keep each GIF under ~5 MB so the profile stays fast to load.
