@@ -64,3 +64,12 @@ payment-recovery engine on AWS Lambda + SQS.
 ![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=2496ED)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=5B8DEF)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0D1117?style=flat-square&logo=githubactions&logoColor=2088FF)
+
+## Commit activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snake-dark.svg" />
+  <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snake.svg" />
+</picture>
+
+<sub>Regenerated daily by <a href="./.github/workflows/snake.yml"><code>.github/workflows/snake.yml</code></a>.</sub>
