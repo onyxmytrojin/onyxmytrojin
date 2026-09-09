@@ -5,14 +5,14 @@ The hard part is separating you from the background. This script does NOT do
 that well on its own for busy natural backgrounds. Give it a clean cutout:
 
     pip install rembg pillow numpy
-    rembg i your-headshot.jpg assets/_src.png     # -> transparent background
+    rembg i your-headshot.jpg assets/portrait-src.png     # -> transparent background
 
 Then:  python assets/portrait.py
 It uses the alpha channel as the subject mask. If _src.png has no alpha (or you
 pass a .jpg), it falls back to using the whole frame — expect noise unless the
 background is already plain.
 
-Swap `shubhan.png` for `portrait.svg` in README.md once it looks right
+It writes `assets/self.svg` (already referenced in README.md) once it looks right
 (assets/_portrait_preview.png is written so you can check first).
 """
 import os, html, glob, numpy as np
