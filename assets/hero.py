@@ -1,12 +1,12 @@
 import os, numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-W, H = 1080, 250
-FRAMES = 48
+W, H = 1000, 232
+FRAMES = 34
 DURATION_MS = 55
 SEED = 11
 OUT = r"C:/Users/hp/Desktop/Projects/github_setup/onyxmytrojin/assets/hero.gif"
-PALETTE_COLORS = 120
+PALETTE_COLORS = 88
 
 BG = 0.050
 BASE = 0.088
@@ -57,7 +57,7 @@ vig = np.clip(1.0 - (np.abs(vy) ** 2.4) * 1.18, 0.0, 1.0)
 # breaks GIF banding without any inter-frame shimmer
 _bayer = np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]]) / 16.0 - 0.5
 bayer = np.tile(_bayer, (H // 4 + 1, W // 4 + 1))[:H, :W]
-grain = (np.random.default_rng(99).normal(0, 0.010, (H, W)) + bayer * 0.028)
+grain = (np.random.default_rng(99).normal(0, 0.007, (H, W)) + bayer * 0.018)
 
 
 def smoothstep(e0, e1, v):
