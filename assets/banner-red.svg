@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 224" width="1000" height="224" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.95">
+      <stop offset="0" stop-color="#2a0a0e"/>
+      <stop offset="0.5" stop-color="#160406"/>
+      <stop offset="1" stop-color="#080203"/>
+    </radialGradient>
+
+    <filter id="clouds" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.013 0.022" numOctaves="2" seed="9" result="n">
+        <animate attributeName="baseFrequency" dur="17s" repeatCount="indefinite"
+                 values="0.013 0.022;0.016 0.018;0.011 0.025;0.013 0.022"/>
+      </feTurbulence>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.75
+                0 0 0 0 0.12
+                0 0 0 0 0.16
+                0.5 0 0 0 -0.24"/>
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3b47" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff3b47" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5563" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff5563" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ff5563" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0.4" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#050102" stop-opacity="1"/>
+    </radialGradient>
+
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 1  0 0 0 0 0.85  0 0 0 0 0.85  0 0 0 0.02 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="224" fill="url(#bg)"/>
+  <rect width="1000" height="224" fill="#fff" filter="url(#clouds)" opacity="0.5"/>
+
+  <ellipse rx="470" ry="240" fill="url(#glow)">
+    <animate attributeName="cx" dur="13s" repeatCount="indefinite" calcMode="spline"
+             keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="300;720;300"/>
+    <animate attributeName="cy" dur="13s" repeatCount="indefinite" values="80;150;80"/>
+    <animate attributeName="rx" dur="7s" repeatCount="indefinite" values="470;420;470"/>
+  </ellipse>
+
+  <rect x="-360" y="-60" width="360" height="344" fill="url(#sweep)" transform="skewX(-15)">
+    <animateTransform attributeName="transform" additive="sum" type="translate"
+                      dur="6s" repeatCount="indefinite" keyTimes="0;0.6;1"
+                      values="0 0;1480 0;1480 0"/>
+  </rect>
+
+  <rect width="1000" height="224" fill="url(#vig)"/>
+  <rect width="1000" height="224" filter="url(#grain)"/>
+
+  <text x="500" y="123" text-anchor="middle" font-size="40" font-weight="300"
+        letter-spacing="14" fill="#f0e6e6">SHUBHAN MEHROTRA</text>
+</svg>
