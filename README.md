@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="assets/ascii-portrait.svg" width="360" alt="" />
+<img src="assets/portrait-ascii.svg" width="360" alt="" />
 
 <p><em>Backend &amp; distributed-systems engineer&nbsp;·&nbsp; event-driven services&nbsp;·&nbsp; Python · Go · AWS</em></p>
 
