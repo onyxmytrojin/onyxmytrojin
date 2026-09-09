@@ -4,7 +4,7 @@
 |---|---|
 | `hero.gif` | Masthead banner — animated dark grayscale gradient with the name. Seamless 36-frame loop, ~0.75 MB. |
 | `hero.py` | Regenerates `hero.gif`. `pip install pillow numpy` then `python assets/hero.py`. Tweak `NAME`, size, palette, motion constants at the top. |
-| `shubhan.png` | Profile photo (dark-graded, rounded). |
+| `shubhan.png` | Profile photo — circular crop of the GitHub avatar. |
 | `portrait.py` | Turns a photo into an animated monochrome ASCII-portrait SVG that types itself in. Needs a **good source**: save it as `assets/_src.jpeg` first. |
 
 ## ASCII portrait — source photo needs

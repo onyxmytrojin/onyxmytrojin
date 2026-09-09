@@ -2,16 +2,17 @@ import os, numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1080, 250
-FRAMES = 36
-DURATION_MS = 70
+FRAMES = 48
+DURATION_MS = 55
 SEED = 11
 OUT = r"C:/Users/hp/Desktop/Projects/github_setup/onyxmytrojin/assets/hero.gif"
-PALETTE_COLORS = 110
+PALETTE_COLORS = 120
 
 BG = 0.050
-BASE = 0.085
-CONTRAST = 0.155
-HIGHLIGHT = 0.13
+BASE = 0.088
+CONTRAST = 0.175
+HIGHLIGHT = 0.12
+SWEEP = 0.075
 
 NAME = "SHUBHAN MEHROTRA"
 FONT_PATH = r"C:/Windows/Fonts/segoeuil.ttf"
@@ -34,8 +35,11 @@ def tileable(h, w, beta, seed):
 base = tileable(H, W, 2.7, SEED)
 warpx = tileable(H, W, 3.0, SEED + 1)
 warpy = tileable(H, W, 3.0, SEED + 2)
+warpx2 = tileable(H, W, 3.0, SEED + 4)
+warpy2 = tileable(H, W, 3.0, SEED + 5)
 fine = tileable(H, W, 2.3, SEED + 3)
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+diag = (xx / W) * 0.72 + (1.0 - yy / H) * 0.28   # 0..1 diagonal, for the light sweep
 
 
 def sample(field, sx, sy):
@@ -73,19 +77,29 @@ rgb_frames = []
 for i in range(FRAMES):
     p = i / FRAMES
     ang = 2 * np.pi * p
-    # every term is periodic in `ang` -> the loop is seamless
-    ox = 22 * np.cos(ang) + 7 * np.cos(2 * ang + 0.7)
-    oy = 13 * np.sin(ang)
-    wx = sample(warpx, xx + 34 * np.cos(ang), yy + 20 * np.sin(ang))
-    wy = sample(warpy, xx + 30 * np.sin(ang + 1.1), yy + 20 * np.cos(ang))
-    amp = 92.0
+    # every term is periodic in `ang` -> the loop stays seamless
+    ox = 46 * np.cos(ang) + 16 * np.cos(2 * ang + 0.7)
+    oy = 26 * np.sin(ang) + 9 * np.sin(3 * ang)
+    # warp fields both pan AND cross-fade between two phases -> the flow evolves,
+    # it doesn't just slide back and forth
+    k = 0.5 + 0.5 * np.cos(ang)
+    wx = k * sample(warpx, xx + 60 * np.cos(ang), yy + 34 * np.sin(ang)) \
+        + (1 - k) * sample(warpx2, xx - 44 * np.sin(ang), yy + 30 * np.cos(ang))
+    wy = k * sample(warpy, xx + 52 * np.sin(ang + 1.1), yy + 34 * np.cos(ang)) \
+        + (1 - k) * sample(warpy2, xx - 40 * np.cos(ang + 0.4), yy - 28 * np.sin(ang))
+    amp = 135.0
     f1 = sample(base, xx + ox + amp * wx, yy + oy + amp * wy)
-    f2 = sample(fine, xx * 1.8 + 40 * np.cos(ang) + 45 * wx, yy * 1.8 + 20 * np.sin(ang) + 22 * wy)
-    field = 0.8 * f1 + 0.2 * f2
-    field = 0.5 + 0.5 * np.tanh(field * 0.9)
+    f2 = sample(fine, xx * 1.8 + 70 * np.cos(ang) + 60 * wx, yy * 1.8 + 40 * np.sin(ang) + 30 * wy)
+    field = 0.78 * f1 + 0.22 * f2
+    field = 0.5 + 0.5 * np.tanh(field * 0.95)
+
+    # a soft light band travelling diagonally, wrapping once per loop
+    ph = (diag - p) % 1.0
+    sweep = np.exp(-(np.minimum(ph, 1.0 - ph) ** 2) / (2 * 0.11 ** 2))
 
     grey = BASE + CONTRAST * (field - 0.5)
-    grey = grey + HIGHLIGHT * smoothstep(0.80, 0.995, field)
+    grey = grey + HIGHLIGHT * smoothstep(0.78, 0.995, field)
+    grey = grey + SWEEP * sweep * (0.35 + 0.65 * field)
     grey = BG + (grey - BG) * vig
     grey = np.clip(grey + grain, 0.0, 1.0)
 
