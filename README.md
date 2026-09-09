@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="assets/portrait-scan.svg" width="300" alt="Shubhan Mehrotra" />
+<img src="assets/portrait-scan2.svg" width="300" alt="Shubhan Mehrotra" />
 
 <p><em>Backend &amp; distributed-systems engineer&nbsp;·&nbsp; event-driven services&nbsp;·&nbsp; Python · Go · AWS</em></p>
 

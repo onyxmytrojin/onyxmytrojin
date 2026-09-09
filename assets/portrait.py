@@ -10,13 +10,13 @@ import os, html
 
 HERE = os.path.dirname(__file__)
 SRC = os.path.join(HERE, "portrait.txt")
-OUT = os.path.join(HERE, "portrait-scan.svg")
+OUT = os.path.join(HERE, "portrait-scan2.svg")
 
 CHAR_W, CHAR_H = 7.1, 12.4
-DIM, BRIGHT, ACCENT, BG = "#8b9096", "#eef0f2", "#ff6b6b", "#0d1117"
+DIM, BRIGHT, ACCENT, BG = "#9ba0a7", "#fff0f0", "#ff5a5a", "#0d1117"
 FONT = "ui-monospace, 'SF Mono', 'JetBrains Mono', Consolas, monospace"
 TYPE_SECONDS = 2.2
-SCAN_SECONDS = 3.6
+SCAN_SECONDS = 3.4
 
 lines = [l.rstrip("\n") for l in open(SRC, encoding="utf-8").read().split("\n")]
 while lines and not lines[-1].strip():
@@ -53,7 +53,7 @@ text{{fill:{DIM};white-space:pre;animation:tp .3s ease forwards}}
 <rect width="100%" height="100%" fill="{BG}"/>
 <g>{tspans}</g>
 <g class="hi" clip-path="url(#clip)">{tspans}</g>
-<rect x="{-band:.0f}" y="0" width="{band:.0f}" height="{H:.0f}" fill="url(#sw)" opacity="0.3">
+<rect x="{-band:.0f}" y="0" width="{band:.0f}" height="{H:.0f}" fill="url(#sw)" opacity="0.4">
 <animate attributeName="x" from="{-band:.0f}" to="{W:.0f}" dur="{SCAN_SECONDS}s" repeatCount="indefinite"/>
 </rect>
 </svg>'''
