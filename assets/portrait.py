@@ -22,7 +22,7 @@ HERE = os.path.dirname(__file__)
 SRC = next((p for p in (os.path.join(HERE, "portrait-src.png"),
                         os.path.join(HERE, "_src.png"), os.path.join(HERE, "_src.jpg"))
             if os.path.exists(p)), os.path.join(HERE, "portrait-src.png"))
-OUT = os.path.join(HERE, "portrait-ascii.svg")
+OUT = os.path.join(HERE, "me.svg")
 PREVIEW = os.path.join(HERE, "_portrait_preview.png")
 
 COLS = 92
