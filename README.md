@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="840" alt="Shubhan Mehrotra" />
+<img src="assets/hero.svg?2" width="840" alt="Shubhan Mehrotra" />
 
 <br>
 
