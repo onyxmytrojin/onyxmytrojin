@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="assets/hero.gif" width="820" alt="Shubhan Mehrotra" />
+<img src="assets/hero.gif" width="840" alt="Shubhan Mehrotra" />
+
+<br>
 
 <img src="assets/shubhan.png" width="200" alt="" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1000&color=A7AEBB&center=true&vCenter=true&width=640&height=36&lines=Backend+%26+Distributed+Systems+Engineer;Event-driven+services+%C2%B7+payments+%26+billing+infra;Distributed+cache+in+Go+%C2%B7+LLM+observability+pipelines;Python+%C2%B7+Go+%C2%B7+AWS" alt="" />
+<p><em>Backend &amp; distributed-systems engineer&nbsp;·&nbsp; event-driven services&nbsp;·&nbsp; Python · Go · AWS</em></p>
 
 <p>
 <a href="https://shubhanmehrotra.com"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
