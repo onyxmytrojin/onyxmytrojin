@@ -1,12 +1,12 @@
 import os, numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-W, H = 1000, 232
-FRAMES = 34
+W, H = 960, 224
+FRAMES = 30
 DURATION_MS = 55
 SEED = 11
 OUT = r"C:/Users/hp/Desktop/Projects/github_setup/onyxmytrojin/assets/hero.gif"
-PALETTE_COLORS = 88
+PALETTE_COLORS = 84
 
 BG = 0.050
 BASE = 0.088
