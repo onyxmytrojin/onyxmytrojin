@@ -1,0 +1,34 @@
+name: stats
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+# no `push` trigger on purpose — this job commits, and a push trigger would
+# re-run it on its own commit
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_stats.py
+
+      - name: commit if changed
+        run: |
+          FILES="assets/stat-summary.svg assets/stat-year.svg"
+          [ -z "$(git status --porcelain -- $FILES)" ] && { echo "no change"; exit 0; }
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- $FILES
+          git commit -m "stats: refresh"
+          git push

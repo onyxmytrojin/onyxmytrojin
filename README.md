@@ -68,8 +68,8 @@ payment-recovery engine on AWS Lambda + SQS.
 ## Commit activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snake-dark.svg" />
-  <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snek-dark.svg" />
+  <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/onyxmytrojin/onyxmytrojin/output/snek.svg" />
 </picture>
 
 <sub>Regenerated daily by <a href="./.github/workflows/snake.yml"><code>.github/workflows/snake.yml</code></a>.</sub>
