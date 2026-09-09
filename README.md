@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="assets/shubhan.png?v=2" width="185" alt="" />
+<img src="assets/portrait.svg" width="360" alt="" />
 
 <p><em>Backend &amp; distributed-systems engineer&nbsp;·&nbsp; event-driven services&nbsp;·&nbsp; Python · Go · AWS</em></p>
 
