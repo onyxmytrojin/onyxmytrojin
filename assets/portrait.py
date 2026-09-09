@@ -22,7 +22,7 @@ HERE = os.path.dirname(__file__)
 SRC = next((p for p in (os.path.join(HERE, "portrait-src.png"),
                         os.path.join(HERE, "_src.png"), os.path.join(HERE, "_src.jpg"))
             if os.path.exists(p)), os.path.join(HERE, "portrait-src.png"))
-OUT = os.path.join(HERE, "me.svg")
+OUT = os.path.join(HERE, "self.svg")
 PREVIEW = os.path.join(HERE, "_portrait_preview.png")
 
 COLS = 92
@@ -82,36 +82,25 @@ for i, l in enumerate(lines):
     pd.text((0, i * ch), l, font=pf, fill=(201, 209, 217))
 pim.save(PREVIEW)
 
-# ---- animated svg ----
+# ---- svg ----
+# Static, plain text only. GitHub renders README SVGs without a SMIL clock and
+# bakes animations at t=0, so an opacity type-in would just hide the portrait.
+# The CSS type-in runs where <img>-embedded SVG CSS is honoured and is inert
+# (text stays visible) everywhere else.
 Wsvg, Hsvg = COLS * CHAR_W, rows * CHAR_H
-per = TYPE_SECONDS / rows
-# base opacity="1" -> the portrait always shows (GitHub renders SVGs without a
-# running SMIL clock). Where SMIL *does* run, the keyframed animation replays the
-# line-by-line type-in; where it doesn't, the text simply stays visible.
-tot = TYPE_SECONDS + 0.6
-tspans = ""
-for i, ln in enumerate(lines):
-    t = min(0.999, (i * per) / tot)
-    t2 = min(1.0, t + 0.012)
-    tspans += (
-        f'<text x="0" y="{(i + 0.85) * CHAR_H:.1f}" opacity="1">{html.escape(ln) or " "}'
-        f'<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;{t:.4f};{t2:.4f};1" '
-        f'dur="{tot:.2f}s" fill="freeze"/></text>'
-    )
-cur_y = ";".join(f"{(i + 0.85) * CHAR_H - CHAR_H * 0.8:.1f}" for i in range(rows))
-# cursor hidden by default (static render shows no stray block); only visible
-# while the SMIL type-in is running
-cursor = (
-    f'<rect width="{CHAR_W:.1f}" height="{CHAR_H * 0.9:.1f}" fill="{FG}" x="2" opacity="0">'
-    f'<animate attributeName="y" values="{cur_y}" dur="{TYPE_SECONDS:.2f}s" calcMode="discrete" fill="freeze"/>'
-    f'<animate attributeName="opacity" values="1;1;0" keyTimes="0;0.82;1" '
-    f'dur="{TYPE_SECONDS + 0.8:.2f}s" fill="freeze"/></rect>'
+per = TYPE_SECONDS / max(rows, 1)
+tspans = "".join(
+    f'<text x="0" y="{(i + 0.85) * CHAR_H:.1f}" style="animation-delay:{i * per:.3f}s">'
+    f'{html.escape(ln) or " "}</text>'
+    for i, ln in enumerate(lines)
 )
 svg = (
     f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {Wsvg:.0f} {Hsvg:.0f}" '
     f'width="{Wsvg:.0f}" height="{Hsvg:.0f}" font-family="{FONT}" '
     f'font-size="{CHAR_H * 0.92:.1f}" xml:space="preserve">'
-    f'<rect width="100%" height="100%" fill="{BG}"/><g fill="{FG}">{tspans}{cursor}</g></svg>'
+    f'<style>text{{fill:{FG};animation:tp .35s ease forwards}}'
+    f'@keyframes tp{{0%{{opacity:0}}100%{{opacity:1}}}}</style>'
+    f'<rect width="100%" height="100%" fill="{BG}"/>{tspans}</svg>'
 )
 open(OUT, "w", encoding="utf-8").write(svg)
 print("wrote", OUT, round(os.path.getsize(OUT) / 1024, 1), "KB   grid", COLS, "x", rows,
